@@ -1,0 +1,30 @@
+{
+  "name": "dial",
+  "version": "1.0",
+  "description": "Dial from Cordova Application",
+  "cordova": {
+    "id": "dial",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crystalcube/CordovaDial.git"
+  },
+  "keywords": [
+    "cordova",
+    "dial",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Crystalcube/CordovaDial/issues"
+  },
+  "homepage": "https://github.com/Crystalcube/CordovaDial#readme"
+}
