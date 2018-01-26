@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-dial" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CordovaDial</name>
+    <js-module name="CordovaDial" src="www/CordovaDial.js">
+        <clobbers target="cordova.plugins.CordovaDial"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaDial">
+                <param name="android-package" value="cordova-plugin-dial.CordovaDial"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.CALL_PHONE"/>
+            <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+        </config-file>
+        <source-file src="src/android/CordovaDial.java" target-dir="src/cordova-plugin-dial/CordovaDial"/>
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CordovaDial">
+                <param name="ios-package" value="CordovaDial"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CordovaDial.m"/>
+    </platform>
+</plugin>
