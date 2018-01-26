@@ -56,7 +56,7 @@ public class CordovaDial extends CordovaPlugin {
         }
       }
 
-    private void dial(String message, CallbackContext callbackContext) {
+    private void dial(JSONArray args) {
         String number = args.getString(0);
             number = number.replaceAll("#", "%23");
 
