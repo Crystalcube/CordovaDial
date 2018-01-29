@@ -8,14 +8,14 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="CordovaDial">
-                <param name="android-package" value="cordova-plugin-dial.CordovaDial"/>
+                <param name="android-package" value="cordova.plugin.dial"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.CALL_PHONE"/>
             <uses-feature android:name="android.hardware.telephony" android:required="false"/>
         </config-file>
-        <source-file src="src/android/CordovaDial.java" target-dir="src/cordova-plugin-dial/CordovaDial"/>
+        <source-file src="src/android/CordovaDial.java" target-dir="src/cordova/plugin/dial"/>
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
